@@ -3,5 +3,10 @@
 </h1>
 <div class="container">
   <book-detail (onBookClick)="bookClicked($event)"></book-detail>
-  <book-list *ngIf="book" [book]="book"></book-list>
+  <book-list *ngIf="book; else noBook" [book]="book"></book-list>
+  <ng-template #noBook>
+    <p>
+      No book selected!
+    </p>
+  </ng-template>
 </div>
