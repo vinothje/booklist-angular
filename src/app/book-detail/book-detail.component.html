@@ -1,0 +1,7 @@
+<div class="details">
+  <ul class="list-group">
+    <li class="list-group-item"
+        (click)="displayDetails(book)"
+        *ngFor="let book of booklist">{{book.title}}</li>
+  </ul>
+</div>

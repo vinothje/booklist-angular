@@ -1,0 +1,7 @@
+<h1>
+  {{title}}
+</h1>
+<div class="container">
+  <book-detail (onBookClick)="bookClicked($event)"></book-detail>
+  <book-list *ngIf="book" [book]="book"></book-list>
+</div>
